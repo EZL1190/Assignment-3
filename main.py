@@ -2,11 +2,11 @@ import webget
 import csv
 import matplotlib.pyplot as plt
 
-#url = ''
-#if __name__ == '__main__':
-#    url = input("URL to download: ")
+url = ''
+if __name__ == '__main__':
+    url = input("URL to download: ")
 
-#webget.download(url)
+webget.download(url)
 
 filename = 'rows.csv'
 
