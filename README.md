@@ -35,4 +35,4 @@ United States : 43901
                                                                                                                                        
                                                                                                                                        
 5. Which state has had the biggest increase in the death of Alzheimers from 1999-2016? Plot the increase year for year using matplotlib
-![Plot](https://i.imgur.com/hm8HwZb.png)
+![Plot](https://i.imgur.com/qzeZkQN.png)
