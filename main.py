@@ -89,6 +89,10 @@ print(state4 + ' : ' + str(deaths4))
 state5 = ''
 difference5 = 0
 deaths5 = []
+years = []
+for i in range(18):
+    years.append(1999 + i)
+
 
 with open(filename) as f:
     reader = csv.reader(f)
@@ -117,15 +121,15 @@ with open(filename) as f:
 print('\n\n')
 print('5. Which state has had the biggest increase in the death of Alzheimers from 1999-2016? Plot the increase year for year using matplotlib ')
 print(deaths5)
+print(years)
 
-plt.plot(deaths5, linewidth=20)
-# Set chart title and label axes. 
+plt.cla()
+plt.bar(years, deaths5, width=0.5, linewidth=0, align='center')
 plt.title("increase in the death", fontsize=24)
 plt.xlabel("Years", fontsize=14)
 plt.ylabel("Deaths", fontsize=14)
-# Set size of tick labels.
-plt.tick_params(axis='both', labelsize=14)
-plt.locator_params(nbins=36)
+plt.tick_params(axis='both', which='major', labelsize=14)
+plt.locator_params(nbins=30)
 plt.show()
 
 
